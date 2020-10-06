@@ -1,0 +1,13 @@
+<h1>マイページ</h1>
+<p>ユーザーID <%= @user.id %></p>
+<p>メールアドレス <%= @user.email %></p>
+
+<%= link_to 'リストを追加', new_list_path %>
+リストを編集
+
+<%= link_to 'プロフィールを編集', edit_user_registration_path %>
+
+<%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
+
+<%= link_to 'アカウントを削除', destroy_user_account_path, method: :delete, data: { confirm: '削除しますか？' } %>
+

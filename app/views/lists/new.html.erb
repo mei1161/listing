@@ -1,0 +1,13 @@
+<h1>リスト登録</h1>
+
+<%= form_with model: @list, local: true do |f| %>
+
+  <%= f.label :list_name %>
+  <%= f.text_field :list_name %>
+
+  <%= f.label :list_comment %>
+  <%= f.text_field :list_comment %>
+
+  <%= f.submit %>
+
+<% end %>
